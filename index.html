@@ -387,6 +387,7 @@ section.visible { opacity: 1; transform: translateY(0); }
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .proj-metric {
@@ -649,7 +650,7 @@ footer .uptime { color: var(--green); }
 
   <div class="hero-grid">
     <div class="hero-stat">
-      <div class="stat-num">6+</div>
+      <div class="stat-num">9+</div>
       <div class="stat-label">Projects</div>
     </div>
     <div class="hero-stat">
@@ -683,7 +684,7 @@ footer .uptime { color: var(--green); }
       <div class="t-line" style="padding-left:20px">
         <span class="t-key">"cloud_devops"</span><span class="t-bracket">: </span>
         <span class="t-bracket">[</span>
-        <span class="t-str">"AWS"</span>, <span class="t-str">"Docker"</span>, <span class="t-str">"Prometheus"</span>, <span class="t-str">"Grafana"</span>, <span class="t-str">"Linux"</span>, <span class="t-str">"Bash"</span>, <span class="t-str">"GitHub Actions"</span>, <span class="t-str">"SSH"</span>
+        <span class="t-str">"AWS"</span>, <span class="t-str">"S3"</span>, <span class="t-str">"CloudFront"</span>, <span class="t-str">"Docker"</span>, <span class="t-str">"Prometheus"</span>, <span class="t-str">"Grafana"</span>, <span class="t-str">"Linux"</span>, <span class="t-str">"Bash"</span>, <span class="t-str">"GitHub Actions"</span>, <span class="t-str">"SSH"</span>
         <span class="t-bracket">],</span>
       </div>
       <div class="t-line" style="padding-left:20px">
@@ -702,6 +703,12 @@ footer .uptime { color: var(--green); }
         <span class="t-key">"languages"</span><span class="t-bracket">: </span>
         <span class="t-bracket">[</span>
         <span class="t-str">"Java"</span>, <span class="t-str">"Python"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"C++"</span>, <span class="t-str">"Bash"</span>
+        <span class="t-bracket">],</span>
+      </div>
+      <div class="t-line" style="padding-left:20px">
+        <span class="t-key">"self_hosting"</span><span class="t-bracket">: </span>
+        <span class="t-bracket">[</span>
+        <span class="t-str">"Nextcloud"</span>, <span class="t-str">"Whoogle"</span>, <span class="t-str">"Docker Compose"</span>, <span class="t-str">"Nginx"</span>
         <span class="t-bracket">],</span>
       </div>
       <div class="t-line" style="padding-left:20px">
@@ -831,6 +838,54 @@ footer .uptime { color: var(--green); }
       <a href="https://weathery-web-app.vercel.app" class="proj-link">↗ live demo</a>
     </div>
 
+    <div class="proj-card">
+      <div class="proj-num">07 / devops</div>
+      <div class="proj-name">AWS EC2 Break-and-Fix Troubleshooting Labs</div>
+      <div class="proj-desc">Seven simulated production incident labs on EC2 — Nginx 502s, disk-full failures, SSH lockouts, file permission issues, high CPU load, cron failures, and MySQL recovery — each resolved through structured, log-driven root cause analysis.</div>
+      <div class="proj-metrics">
+        <span class="proj-metric">7 labs completed</span>
+        <span class="proj-metric">Log-driven RCA</span>
+      </div>
+      <div class="proj-stack">
+        <span class="stack-tag">AWS EC2</span>
+        <span class="stack-tag">Linux</span>
+        <span class="stack-tag">Nginx</span>
+        <span class="stack-tag">MySQL</span>
+        <span class="stack-tag">Bash</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">08 / cloud</div>
+      <div class="proj-name">S3 + CloudFront Static Hosting with CI/CD</div>
+      <div class="proj-desc">Automated static site hosting pipeline on AWS, using S3 for storage and CloudFront for global content delivery. GitHub Actions handles build validation and deployment on every push.</div>
+      <div class="proj-metrics">
+        <span class="proj-metric">Automated deploys</span>
+        <span class="proj-metric">Global CDN</span>
+      </div>
+      <div class="proj-stack">
+        <span class="stack-tag">AWS S3</span>
+        <span class="stack-tag">CloudFront</span>
+        <span class="stack-tag">GitHub Actions</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">09 / self-hosting</div>
+      <div class="proj-name">Nextcloud Home Server Deployment</div>
+      <div class="proj-desc">Self-hosted Nextcloud instance deployed on a local home server, with storage, user access, and networking configured for personal cloud file sync and sharing. Actively maintained.</div>
+      <div class="proj-metrics">
+        <span class="proj-metric">Self-hosted</span>
+        <span class="proj-metric">Home server</span>
+      </div>
+      <div class="proj-stack">
+        <span class="stack-tag">Nextcloud</span>
+        <span class="stack-tag">Linux</span>
+        <span class="stack-tag">Networking</span>
+        <span class="stack-tag">Server admin</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -854,6 +909,7 @@ footer .uptime { color: var(--green); }
         </ul>
       </div>
     </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
